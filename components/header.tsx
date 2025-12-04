@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+
 import { Search, MapPin, ShoppingCart, Menu, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -57,10 +59,12 @@ export default function Header() {
                 <ShoppingCart className="w-5 h-5" />
               </Button>
 
-              <Button variant="ghost" size="sm" className="gap-2 text-white hover:bg-green-600">
-                <User className="w-5 h-5" />
-                <span className="hidden sm:inline">Login</span>
-              </Button>
+             <Link href="/login">
+  <Button variant="ghost" size="sm" className="gap-2 text-white hover:bg-green-600">
+    <User className="w-5 h-5" />
+    <span className="hidden sm:inline">Login</span>
+  </Button>
+</Link>
 
               <Button variant="ghost" size="icon" className="md:hidden text-white hover:bg-green-600">
                 <Menu className="w-5 h-5" />
