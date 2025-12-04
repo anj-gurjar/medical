@@ -18,7 +18,7 @@ export default function Header() {
             {/* 4. Adjust logo background color for contrast if necessary */}
             <div className="w-10 h-10 bg-green-700 text-white rounded-lg flex items-center justify-center font-bold text-lg">
               {/* Note: 'ima' should be 'img' and should be self-closing */}
-              <img src='logo.png' alt='Sudha Pharma' className="w-full h-full object-cover rounded-lg" />
+              <img src='/logo.png' alt='Sudha Pharma' className="w-full h-full object-cover rounded-lg" />
             </div>
             <span className="font-bold text-xl hidden sm:inline">Sudha Pharma</span>
           </div>
